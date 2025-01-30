@@ -209,22 +209,87 @@ footer .column h3{
     --violet: #d33bfd;
 }
 
+.sidebars-ouvert{
+    display: none;
+}
+
 /* responsive */
 
 @media (max-width: 768px){
 
+    .sidebars {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+    }
 
-    header nav{
+    .sidebars div{
+        width: 100%;
+        height: 3px;
+        background-color: #d33bfd;
+    }
+
+    .sidebars.open div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 10px);
+    }
+    
+    .sidebars.open div:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .sidebars.open div:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -10px);
+    }
+
+    .sidebars-ouvert.open{
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        background-color: #d33bfd;
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        z-index: 1000;
+    }
+
+    .sidebars-ouvert.open button{
+        background: none;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 5px 15px;
+        font-size: 1em;
+        margin-top: 20px;
+    }
+
+    .sidebars-ouvert.open button:hover{
+        background-color: white;
+        color: #d33bfd;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .right button{
+        display: none;
+    }
+
+
+    header nav{
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
     }
 
     header div{
         align-items: center;
-    }
-
-    header nav h1{
-        margin-bottom: 20px;
     }
 
     header nav p{
@@ -233,6 +298,7 @@ footer .column h3{
     }
 
     header nav button{
+        display: none;
         margin-top: 20px;
     }
 
