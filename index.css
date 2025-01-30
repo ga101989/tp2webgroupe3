@@ -233,7 +233,7 @@ footer .column h3{
     }
 
     .sidebars.open div:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 10px);
+        transform: rotate(45deg) translate(6px, 10px);
     }
     
     .sidebars.open div:nth-child(2) {
@@ -253,7 +253,7 @@ footer .column h3{
         position: absolute;
         top: 10%;
         right: 0;
-        width: 50%;
+        width: 60%;
         height: 100vh;
         z-index: 1000;
     }

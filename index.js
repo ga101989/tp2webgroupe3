@@ -7,8 +7,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (sidebar) {
         sidebar.addEventListener('click', function() {
+            event.stopPropagation();
             sidebar.classList.toggle('open');
             sidebarOpen.classList.toggle('open');
         });
     }
+
+    document.addEventListener('click', function(event) {
+        if (!sidebarOpen.contains(event.target)) { 
+            sidebar.classList.remove('open');
+            sidebarOpen.classList.remove('open');
+        }
+    });
+
 });
