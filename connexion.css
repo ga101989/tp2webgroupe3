@@ -1,0 +1,126 @@
+
+.connexion-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    
+}
+
+.connexion-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    border: 2px solid #d33bfd;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.inscription-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    border: 2px solid #d33bfd;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.connexion-first form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    width: 80%;
+}
+
+.connexion-first form h1{
+    font-size: 3vw;
+    margin: 2%;
+}
+
+.connexion-first a{
+    color: #d33bfd;
+    margin: 2%;
+}
+
+.connexion-first form label{
+    font-size: 1.5vw;
+    margin: 2%;
+}
+
+.connexion-first form input{
+    width: 100%;
+    height: 2vw;
+    margin: 2%;
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.connexion-first form button{
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.connexion-first form button:hover{
+    background-color: white;
+    color: #d33bfd;
+}
+
+/* placeholder */
+.connexion-first form input::placeholder{
+    color: white;
+    background: none;
+    border-color: #d33bfd;
+}
+
+.connexion-first form input{
+    color: white;
+    background: none;
+    background-color: none;
+    border-color: #d33bfd;
+}
+
+.inscription-text{
+    display: none;
+}
+
+
+
+@media (max-width: 768px){
+
+    .connexion-first form h1 {
+        font-size: 5vw;
+    }
+
+    .connexion-first form label {
+        font-size: 3vw;
+    }
+
+    .connexion-first form input {
+        height: 8vw;
+    }
+
+    .inscription-text{
+        width: 80%;
+        margin-top: 30%;
+        margin-bottom: 15%;
+    }
+
+    .connexion-text{
+        width: 80%;
+        margin-top: 30%;
+        margin-bottom: 15%;
+    }
+
+
+
+}

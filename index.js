@@ -21,3 +21,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
+let lastScroll = 0;
+const header = document.querySelector("header nav"); 
+
+window.addEventListener("scroll", () => {
+    let currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll && currentScroll > 300) {
+        header.style.transform = "translateY(-100%)";
+    } else {
+        header.style.transform = "translateY(0)";
+    }
+
+    lastScroll = currentScroll;
+});
+
