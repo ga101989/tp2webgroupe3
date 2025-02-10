@@ -233,6 +233,40 @@ footer .column h3{
     display: none;
 }
 
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+li:hover{
+    cursor: pointer;
+    color: gray;
+    transition: 0.5s ease-in-out;
+}
+
+.active{
+    border-bottom: 2px solid violet;
+    padding: 0.7rem
+
+}
+
 /* responsive */
 
 @media (max-width: 768px){
